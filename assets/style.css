@@ -1,0 +1,9 @@
+.related-product-container {
+	margin: 0 0 20px;
+}
+
+.related-product-container:after {
+	display: table;
+	content: "";
+	clear: both;
+}
