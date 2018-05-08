@@ -7,9 +7,6 @@
             "email": "dock3r@gmail.com"
         }
     ],
-    "require": {
-        "twig/twig": "~1.0"
-    },
     "autoload": {
         "psr-4": {
             "cncEP\\": "includes"
