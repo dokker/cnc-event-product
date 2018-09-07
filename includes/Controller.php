@@ -20,7 +20,6 @@ class Controller
 	{
 		$view = new \cncEP\View();
 		$related_products = $view->render('related_products');
-		die();
 		$content .= $related_products;
 		return $content;
 	}
@@ -36,7 +35,7 @@ class Controller
 	<script>
 	    jQuery( document ).ready( function( $ ) {
 	        $( document ).on( 'change', '.quantity .qty', function() {
-	            $( this ).parent( '.quantity' ).next( '.add_to_cart_button' ).attr( 'data-quantity', $( this ).val() );
+	            $( this ).parent( '.quantity' ).next( '.add_to_cart_button' ).data( 'quantity', $( this ).val() );
 	        });
 	    });
 	</script>
