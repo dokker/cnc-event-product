@@ -12,8 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly.
 <?php $posts = get_field('related_product'); ?>
 
 <?php if($posts): ?>
-	<div class="woocommerce">
+	<div class="woocommerce related-products">
 	<?php foreach ($posts as $post): ?>
+		<div class="product">
 
 
 	<?php
@@ -27,6 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly.
 		    <a href="<?php echo apply_filters( 'out_of_stock_add_to_cart_url', get_permalink( $product->id ) ); ?>" class="button"><?php echo apply_filters( 'out_of_stock_add_to_cart_text', __( 'Read More', 'woocommerce' ) ); ?></a>
 
 		<?php else : // in stock ?>
+			<p class="product-title"><?php echo $product->get_name(); ?> - <?php echo wc_price($product->get_price()); ?></p>
 
 		    <?php
 		        $link = array(
@@ -81,6 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly.
 
 		<?php endif; ?>
 
+		</div>
 	<?php endforeach; ?>
 	</div>
 <?php endif; // if($products) ?>

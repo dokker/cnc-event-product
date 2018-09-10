@@ -7,3 +7,45 @@
 	content: "";
 	clear: both;
 }
+
+.related-products form.cart .quantity {
+	float: left;
+}
+
+.related-products form.cart .button {
+	float: left;
+	height: 42px;
+}
+
+.related-products .product:after,
+.related-products form:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.related-products .product-title,
+.related-products form {
+	float: left;
+	margin: 0 !important;
+}
+.related-products form {
+	float: right;
+}
+
+.related-products .product-title {
+	line-height: 42px;
+	display: block;
+	font-size: 20px;
+	color: #000;
+}
+
+.related-products div.product {
+	padding: 10px 20px;
+	background: #f7f7f7;
+}
+
+.added_to_cart.wc-forward {
+	display: none;
+}
+
