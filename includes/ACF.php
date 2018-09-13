@@ -13,38 +13,39 @@ class ACF
 	{
 		if( function_exists('acf_add_local_field_group') ):
 
-		acf_add_local_field_group(array (
-			'key' => 'group_58b02a1e3a1d5',
+		acf_add_local_field_group(array(
+			'key' => 'group_5b91281717ea2',
 			'title' => 'Kapcsolódó termék',
 			'fields' => array (
 				array (
 					'key' => 'field_58b039bd88490',
-					'label' => 'Kapcsolódó termék',
+					'label' => 'Kapcsolódó termékek',
 					'name' => 'related_product',
-					'type' => 'post_object',
+					'type' => 'relationship',
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
 					),
-					'post_type' => array (
+					'post_type' => array(
 						0 => 'product',
 					),
-					'taxonomy' => array (
-						0 => 'product_cat:esemenyek',
+					'taxonomy' => '',
+					'filters' => array(
+						0 => 'search',
 					),
-					'allow_null' => 1,
-					'multiple' => 0,
+					'elements' => '',
+					'min' => '',
+					'max' => '',
 					'return_format' => 'object',
-					'ui' => 1,
 				),
 			),
-			'location' => array (
-				array (
-					array (
+			'location' => array(
+				array(
+					array(
 						'param' => 'post_type',
 						'operator' => '==',
 						'value' => 'event',
