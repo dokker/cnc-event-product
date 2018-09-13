@@ -71,7 +71,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly.
 		                    woocommerce_quantity_input();
 
 		                    // Display the submit button.
-		                    echo sprintf( '<button type="submit" data-product_id="%s" data-product_sku="%s" data-quantity="1" class="%s button ajax_add_to_cart">%s</button>', esc_attr( $product->id ), esc_attr( $product->get_sku() ), esc_attr( $link['class'] ), esc_html( $link['label'] ) );
+		                    echo sprintf( '<button type="submit" data-product_id="%s" data-product_sku="%s" data-quantity="1" class="%s button mk-button mk-button--dimension-outline skin-dark ajax_add_to_cart">%s</button>', esc_attr( $product->id ), esc_attr( $product->get_sku() ), esc_attr( $link['class'] ), esc_html( $link['label'] ) );
 		                ?>
 		            </form>
 		            <?php

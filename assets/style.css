@@ -49,3 +49,8 @@
 	display: none;
 }
 
+.related-products .product button {
+	border-width: 2px;
+	border-style: solid;
+}
+
